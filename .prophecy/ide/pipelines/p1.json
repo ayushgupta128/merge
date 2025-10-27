@@ -1,0 +1,111 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false
+  },
+  "processes" : {
+    "ZQSLXkfrnFEUQHjas5fZ3$$bIN1uF2PSz8GEY9nTU_xn" : {
+      "id" : "ZQSLXkfrnFEUQHjas5fZ3$$bIN1uF2PSz8GEY9nTU_xn",
+      "component" : "FuzzyMatch",
+      "metadata" : {
+        "label" : "FuzzyMatch_0",
+        "x" : -800,
+        "y" : -440,
+        "phase" : 0
+      },
+      "properties" : {
+        "relation_name" : [ ],
+        "includeSimilarityScore" : false,
+        "matchFields" : [ ],
+        "sourceIdCol" : "",
+        "matchThresholdPercentage" : 80,
+        "activeTab" : "configuration",
+        "recordIdCol" : "",
+        "mode" : ""
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YpU7qXIYtd3HO-NZ05j6P$$Hg6BfrMyQqDMwlQVHyab0",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "HAbN2I2gJWu6EL9QwKhgj$$39WwdxkWsQarl8rhjY-HM",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "componentInfo" : {
+        "gemId" : "FuzzyMatch_DatabricksSqlBasics",
+        "name" : "FuzzyMatch",
+        "projectName" : "DatabricksSqlBasics",
+        "sourceProjectName" : "DatabricksSqlBasics",
+        "sourceProjectVersion" : "0.0.12"
+      }
+    },
+    "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv" : {
+      "id" : "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv",
+      "component" : "FindDuplicates",
+      "metadata" : {
+        "label" : "FindDuplicates_1",
+        "x" : -660,
+        "y" : -440,
+        "phase" : 0
+      },
+      "properties" : {
+        "relation_name" : [ ],
+        "generationMethod" : "allCols",
+        "output_type" : "unique",
+        "upper_limit" : "",
+        "schema" : "''",
+        "lower_limit" : "",
+        "column_group_rownum_condition" : "",
+        "orderByColumns" : [ ],
+        "grouped_count_rownum" : "",
+        "groupByColumnNames" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5dnQ74uIMRZcvzPXdx1Gf$$bqaqzHvZLlSDqayGFICJ3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "componentInfo" : {
+        "gemId" : "FindDuplicates_DatabricksSqlBasics",
+        "name" : "FindDuplicates",
+        "projectName" : "DatabricksSqlBasics",
+        "sourceProjectName" : "DatabricksSqlBasics",
+        "sourceProjectVersion" : "0.0.12"
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
