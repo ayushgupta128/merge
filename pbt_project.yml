@@ -36,6 +36,15 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-10-27 10:16:49'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
+    createdAt: '2025-10-27 10:20:59'
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
@@ -58,3 +67,16 @@ flags:
   shouldAddDefaultDependenciesIfAbsent: false
 pipelineConfigurations: {}
 projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p1:
+    name: p1
+    schema: null
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - models/p1/schema.yml
+    - models/p1/p1__FuzzyMatch_0.sql
+    - .prophecy/ide/pipelines/p1.json
+    - pipelines/p1.py
+    createdAt: '2025-10-27 10:20:59'
+sqlBusinessApps: {}
