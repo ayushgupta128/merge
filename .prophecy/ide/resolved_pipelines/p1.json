@@ -1,0 +1,81 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false
+  },
+  "processes" : {
+    "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv" : {
+      "id" : "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p1__FindDuplicates_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p1__FindDuplicates_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "FindDuplicates_1_rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx", "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "p1__FindDuplicates_1_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ZQSLXkfrnFEUQHjas5fZ3$$bIN1uF2PSz8GEY9nTU_xn" : {
+      "id" : "ZQSLXkfrnFEUQHjas5fZ3$$bIN1uF2PSz8GEY9nTU_xn",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p1__FuzzyMatch_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p1__FuzzyMatch_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "FuzzyMatch_0_HAbN2I2gJWu6EL9QwKhgj$$39WwdxkWsQarl8rhjY-HM", "ZQSLXkfrnFEUQHjas5fZ3$$bIN1uF2PSz8GEY9nTU_xn" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "p1__FuzzyMatch_0_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
