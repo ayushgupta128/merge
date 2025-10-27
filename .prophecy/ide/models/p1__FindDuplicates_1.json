@@ -1,0 +1,94 @@
+{
+  "id" : "p1__FindDuplicates_1",
+  "metainfo" : {
+    "label" : "p1__FindDuplicates_1",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "ephemeral",
+        "database" : "\"ayush_demos\"",
+        "schema" : "\"demos\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "FindDuplicates_1_rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx" : {
+      "id" : "FindDuplicates_1_rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "FindDuplicates_1"
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM FindDuplicates_1\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv" : {
+      "id" : "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv",
+      "component" : "FindDuplicates",
+      "metadata" : {
+        "label" : "FindDuplicates_1",
+        "x" : -660,
+        "y" : -440,
+        "phase" : 0
+      },
+      "properties" : {
+        "relation_name" : [ ],
+        "generationMethod" : "allCols",
+        "output_type" : "unique",
+        "upper_limit" : "",
+        "schema" : "''",
+        "lower_limit" : "",
+        "column_group_rownum_condition" : "",
+        "orderByColumns" : [ ],
+        "grouped_count_rownum" : "",
+        "groupByColumnNames" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5dnQ74uIMRZcvzPXdx1Gf$$bqaqzHvZLlSDqayGFICJ3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv_FindDuplicates_1_rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx",
+    "source" : "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv",
+    "sourcePort" : "rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx",
+    "target" : "FindDuplicates_1_rr7mbvVczQchebj3GVEqJ$$7LFFY2u6TEZPCpCTcPGEx",
+    "targetPort" : "input_port_0"
+  } ],
+  "component" : "Model"
+}
