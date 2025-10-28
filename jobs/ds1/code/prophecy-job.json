@@ -1,0 +1,198 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "34475",
+    "jobId" : "jobs/ds1",
+    "name" : "ds1",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false,
+      "onDurationWarningThresholdExceeded" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false,
+        "onDurationWarningThresholdExceeded" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false,
+      "onDurationWarningThresholdExceeded" : false
+    }
+  },
+  "processes" : {
+    "G_O5WKxMXPC09Zx4l7DR7$$t4JLXHvhrOJ0DIK_friD_" : {
+      "id" : "G_O5WKxMXPC09Zx4l7DR7$$t4JLXHvhrOJ0DIK_friD_",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : -560,
+        "y" : -440
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "DRcSI3xGVD6Ex07m8R-mh$$83az3G_2YR8DF_loOE606",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "ISFCPJH9HvY4DsyggVx6d$$Ezs-bcOt0MSW6EiqdXYmq",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false,
+          "onDurationWarningThresholdExceeded" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false,
+        "onDurationWarningThresholdExceeded" : false
+      },
+      "properties" : {
+        "code" : "print(\"a\")"
+      },
+      "conditional" : {
+        "runIf" : "ALL_SUCCESS",
+        "forEach" : false,
+        "forEachConfig" : "",
+        "forEachConcurrency" : 1,
+        "forEachInputVariable" : "",
+        "forEachIterationCount" : null
+      },
+      "parent" : null
+    },
+    "VxjQEGO42Qn_xfeMuw66K$$OOLOMnWs3_kYd690bUwzx" : {
+      "id" : "VxjQEGO42Qn_xfeMuw66K$$OOLOMnWs3_kYd690bUwzx",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : -700,
+        "y" : -440
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "W_bhMdPRFOpNS9Vg0G6Rk$$NiTTlS1beD4mMggqjqhqn",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "r19Xe-SDjB-6zufYwtMbG$$dEjMwsCUwsLXcv34OkPEh",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false,
+          "onDurationWarningThresholdExceeded" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false,
+        "onDurationWarningThresholdExceeded" : false
+      },
+      "properties" : {
+        "code" : "print(\"a\")"
+      },
+      "conditional" : {
+        "runIf" : "ALL_SUCCESS",
+        "forEach" : false,
+        "forEachConfig" : "",
+        "forEachConcurrency" : 1,
+        "forEachInputVariable" : "",
+        "forEachIterationCount" : null
+      },
+      "parent" : null
+    },
+    "IxSstnSWssKX2wlDHahsM$$oygrGKsMWh5eKzf__AHxk" : {
+      "id" : "IxSstnSWssKX2wlDHahsM$$oygrGKsMWh5eKzf__AHxk",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : -420,
+        "y" : -420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xq7W_4XpotHi3F4-YFdqM$$HgoCcHQQuur3EYRv-A7tG",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "tI30SSGEC8pVaJDdOrwhr$$42tgbo2Zl0WOcunbQd4VC",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false,
+          "onDurationWarningThresholdExceeded" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false,
+        "onDurationWarningThresholdExceeded" : false
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "projectId" : "",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : false,
+        "execTest" : true,
+        "currentProjectModels" : [ ]
+      },
+      "conditional" : {
+        "runIf" : "ALL_SUCCESS",
+        "forEach" : false,
+        "forEachConfig" : "",
+        "forEachConcurrency" : 1,
+        "forEachInputVariable" : "",
+        "forEachIterationCount" : null
+      },
+      "parent" : null
+    }
+  },
+  "connections" : [ {
+    "id" : "r29pxyWzKli6s3QVv5JVX$$TjIdQ0vG3ZVgo-l1sDqDa",
+    "source" : "VxjQEGO42Qn_xfeMuw66K$$OOLOMnWs3_kYd690bUwzx",
+    "target" : "G_O5WKxMXPC09Zx4l7DR7$$t4JLXHvhrOJ0DIK_friD_",
+    "sourcePort" : "r19Xe-SDjB-6zufYwtMbG$$dEjMwsCUwsLXcv34OkPEh",
+    "targetPort" : "DRcSI3xGVD6Ex07m8R-mh$$83az3G_2YR8DF_loOE606"
+  } ]
+}

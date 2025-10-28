@@ -1,0 +1,43 @@
+{
+  "id" : "t1",
+  "metainfo" : {
+    "label" : "t1",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "t1##H40a6cwt" : {
+      "id" : "t1##H40a6cwt",
+      "component" : "TargetSingularDataTest",
+      "metadata" : {
+        "label" : "t1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "query" : "",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UYCzrwGv",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "YL6pEbo9",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "SingularDataTest"
+}
