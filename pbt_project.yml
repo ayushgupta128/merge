@@ -1,6 +1,6 @@
 name: sql_orch
 description: ''
-version: 0.0.1
+version: 0.0.1-SNAPSHOT
 author: g.ayush@prophecy.io
 language: sql
 buildSystem: ''
@@ -8,7 +8,159 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/job1:
+    name: job1
+    description: ''
+    fabricUID: 32012
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-10-28 06:46:20'
+    author: g.ayush@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/job2:
+    name: job2
+    description: ''
+    fabricUID: 32012
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 0/1 * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-10-28 06:47:30'
+    author: g.ayush@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/job3:
+    name: job3
+    description: ''
+    fabricUID: 35120
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2025-10-28 10:39:38'
+    author: g.ayush@prophecy.io
+    models:
+    - m1
+    sqlProjects: []
+  jobs/tfhfv:
+    name: tfhfv
+    description: ''
+    fabricUID: 35120
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-10-28 10:53:55'
+    author: g.ayush@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/airflow_jobs:
+    name: airflow_jobs
+    description: ''
+    fabricUID: 35120
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-10-28 11:41:25'
+    author: g.ayush@prophecy.io
+    models:
+    - m1
+    sqlProjects: []
+  jobs/ds1:
+    name: ds1
+    description: ''
+    fabricUID: 34475
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-10-28 11:58:49'
+    author: g.ayush@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -23,9 +175,48 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/m1:
+    name: m1
+    schema: null
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - models/m1.sql
+    - .prophecy/ide/models/m1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-10-28 10:25:40'
+  .prophecy/metadata/sqlmodels/m2:
+    name: m2
+    schema: null
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - models/m2.sql
+    - .prophecy/ide/models/m2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-10-28 10:25:48'
 sqlSnapshots: {}
-sqlTests: {}
+sqlTests:
+  .prophecy/metadata/sqltests/t1:
+    name: t1
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - tests/t1.sql
+    - .prophecy/ide/tests/data/singular/t1.json
+    testType: SingularDataTest
+    createdAt: '2025-10-28 07:54:00'
 sqlMacros:
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name

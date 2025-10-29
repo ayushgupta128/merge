@@ -8,7 +8,7 @@
 
 WITH FuzzyMatch_0 AS (
 
-  {{ DatabricksSqlBasics.FuzzyMatch('', '', '', '', {  }, 80, false) }}
+  {{ prophecy_basics.FuzzyMatch('', '', '', '', {  }, 80, false) }}
 
 )
 

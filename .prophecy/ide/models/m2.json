@@ -1,0 +1,123 @@
+{
+  "id" : "m2",
+  "metainfo" : {
+    "label" : "m2",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "m2##t3ZvISb5" : {
+      "id" : "m2##t3ZvISb5",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "m2",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM in0\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GEDipzJ9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "B2CwS5wD",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "lBPQmFKfQJIg95ZzQ2r2d" : {
+      "id" : "lBPQmFKfQJIg95ZzQ2r2d",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "m1",
+        "slug" : "m1",
+        "x" : -520,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "m1",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "O6mrgQUa1Sv2ckKIO30ev",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "BQKQUcFaEXYycpHwJiquA$$ab7XE15WaWvzkWZBrmjAm" : {
+      "id" : "BQKQUcFaEXYycpHwJiquA$$ab7XE15WaWvzkWZBrmjAm",
+      "component" : "Transpose",
+      "metadata" : {
+        "label" : "Transpose_1",
+        "slug" : "Transpose_1",
+        "x" : -260,
+        "y" : -160,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "relation_name" : [ ],
+        "dataColumns" : [ ],
+        "customNames" : false,
+        "schema" : "",
+        "valueColumn" : "Value",
+        "keyColumns" : [ ],
+        "nameColumn" : "Name"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4pLqknM58pqVIDvNZ8Xxl$$VEq-wjuwjjNAxMEDV5wn3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "RCioCchXsUctO2jjPNk62$$a2pa4kYpJELSunBVC5Fmt",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "Transpose_prophecy_basics",
+        "name" : "Transpose",
+        "projectName" : "prophecy_basics",
+        "sourceProjectName" : "prophecy_basics",
+        "sourceProjectVersion" : "1.0.0"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "jijrWl8VvFkZjBFpSTRwZ$$a0_oxb_VhBjpgppY4ckXp",
+    "source" : "lBPQmFKfQJIg95ZzQ2r2d",
+    "sourcePort" : "O6mrgQUa1Sv2ckKIO30ev",
+    "target" : "BQKQUcFaEXYycpHwJiquA$$ab7XE15WaWvzkWZBrmjAm",
+    "targetPort" : "4pLqknM58pqVIDvNZ8Xxl$$VEq-wjuwjjNAxMEDV5wn3"
+  } ],
+  "component" : "Model"
+}

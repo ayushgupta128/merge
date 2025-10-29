@@ -58,11 +58,11 @@
         "isCustomOutputSchema" : false
       },
       "componentInfo" : {
-        "gemId" : "FuzzyMatch_DatabricksSqlBasics",
+        "gemId" : "FuzzyMatch_prophecy_basics",
         "name" : "FuzzyMatch",
-        "projectName" : "DatabricksSqlBasics",
-        "sourceProjectName" : "DatabricksSqlBasics",
-        "sourceProjectVersion" : "0.0.12"
+        "projectName" : "prophecy_basics",
+        "sourceProjectName" : "prophecy_basics",
+        "sourceProjectVersion" : "1.0.0"
       }
     },
     "eXU-IADFUYcn9FcxLUkAK$$7Cm0V7yyjK_dYpXUtZrdv" : {
@@ -98,11 +98,11 @@
         "isCustomOutputSchema" : false
       },
       "componentInfo" : {
-        "gemId" : "FindDuplicates_DatabricksSqlBasics",
+        "gemId" : "FindDuplicates_prophecy_basics",
         "name" : "FindDuplicates",
-        "projectName" : "DatabricksSqlBasics",
-        "sourceProjectName" : "DatabricksSqlBasics",
-        "sourceProjectVersion" : "0.0.12"
+        "projectName" : "prophecy_basics",
+        "sourceProjectName" : "prophecy_basics",
+        "sourceProjectVersion" : "1.0.0"
       }
     }
   },
